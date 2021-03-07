@@ -13,6 +13,7 @@ public class Card
     public int PV;
     public string CardDescription;
     public int Rarete;
+    public int Type;
 
     public Sprite Image;
 
@@ -21,7 +22,7 @@ public class Card
 
 	}
 
-    public Card(int id, string cardName, int cost, int power, int pv, string cardDescription, Sprite image, int rarete)
+    public Card(int id, string cardName, int cost, int power, int pv, string cardDescription, Sprite image, int rarete, int type)
 	{
         Id = id;
         CardName = cardName;
@@ -31,5 +32,6 @@ public class Card
         PV = pv;
         Image = image;
         Rarete = rarete;
+        Type = type;
 	}
 }
